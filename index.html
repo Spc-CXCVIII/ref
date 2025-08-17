@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hi - Icon Greeting</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .greeting-container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 600px;
+        }
+        
+        .greeting-title {
+            font-size: 3em;
+            color: #333;
+            margin-bottom: 30px;
+            font-weight: bold;
+        }
+        
+        .icons-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 30px 0;
+            flex-wrap: wrap;
+        }
+        
+        .icon-wrapper {
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .icon-wrapper:hover {
+            transform: scale(1.1);
+        }
+        
+        .icon-wrapper svg {
+            width: 80px;
+            height: 80px;
+        }
+        
+        .subtitle {
+            font-size: 1.2em;
+            color: #666;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 768px) {
+            .greeting-container {
+                margin: 20px;
+                padding: 30px;
+            }
+            
+            .greeting-title {
+                font-size: 2.5em;
+            }
+            
+            .icon-wrapper svg {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="greeting-container">
+        <h1 class="greeting-title">Hi!</h1>
+        
+        <div class="icons-container">
+            <div class="icon-wrapper">
+                <svg width="80px" height="80px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> 
+                        <path opacity="0.5" d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.5997 2.37562 15.1116 3.04346 16.4525C3.22094 16.8088 3.28001 17.2161 3.17712 17.6006L2.58151 19.8267C2.32295 20.793 3.20701 21.677 4.17335 21.4185L6.39939 20.8229C6.78393 20.72 7.19121 20.7791 7.54753 20.9565C8.88837 21.6244 10.4003 22 12 22Z" fill="#667eea"/> 
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.0004 6.77539C11.5448 6.77539 11.1754 7.14476 11.1754 7.60039V16.4004C11.1754 16.856 11.5448 17.2254 12.0004 17.2254C12.456 17.2254 12.8254 16.856 12.8254 16.4004V7.60039C12.8254 7.14476 12.456 6.77539 12.0004 6.77539Z" fill="#333"/> 
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.60039 8.97539C7.14476 8.97539 6.77539 9.34476 6.77539 9.80039V14.2004C6.77539 14.656 7.14476 15.0254 7.60039 15.0254C8.05603 15.0254 8.42539 14.656 8.42539 14.2004V9.80039C8.42539 9.34476 8.05603 8.97539 7.60039 8.97539Z" fill="#333"/> 
+                        <path d="M15.5754 9.80039C15.5754 9.34476 15.9448 8.97539 16.4004 8.97539C16.856 8.97539 17.2254 9.34476 17.2254 9.80039V14.2004C17.2254 14.656 16.856 15.0254 16.4004 15.0254C15.9448 15.0254 15.5754 14.656 15.5754 14.2004V9.80039Z" fill="#333"/> 
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="icon-wrapper">
+                <svg width="80px" height="80px" viewBox="-2.4 -2.4 28.80 28.80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0">
+                        <rect x="-2.4" y="-2.4" width="28.80" height="28.80" rx="14.4" fill="#00ffe1" strokewidth="0"/>
+                    </g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g id="SVGRepo_iconCarrier"> 
+                        <path d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+                        <path d="M8.0365 12.2563C7.44115 12.0248 7.14348 11.909 7.05658 11.7422C6.98124 11.5976 6.98114 11.4254 7.0563 11.2807C7.14301 11.1138 7.44055 10.9977 8.03562 10.7654L14.4234 8.27265C14.9605 8.06302 15.2291 7.9582 15.4008 8.01554C15.5498 8.06533 15.6668 8.1823 15.7166 8.33135C15.7739 8.50298 15.6691 8.77157 15.4595 9.30874L12.9667 15.6965C12.7345 16.2916 12.6184 16.5891 12.4514 16.6758C12.3068 16.751 12.1345 16.7509 11.9899 16.6755C11.8231 16.5886 11.7073 16.291 11.4758 15.6956L10.6404 13.5474C10.5934 13.4265 10.5699 13.3661 10.5336 13.3152C10.5014 13.2701 10.462 13.2307 10.4169 13.1985C10.366 13.1622 10.3056 13.1387 10.1847 13.0917L8.0365 12.2563Z" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> 
+                    </g>
+                </svg>
+            </div>
+            
+            <div class="icon-wrapper">
+                <svg width="80px" height="80px" viewBox="-102.4 -102.4 1228.80 1228.80" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0">
+                        <rect x="-102.4" y="-102.4" width="1228.80" height="1228.80" rx="614.4" fill="#7ed0ec" strokewidth="0"/>
+                    </g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                    <g>
+                        <path d="M512 512m-480 0a480 480 0 1 0 960 0 480 480 0 1 0-960 0Z" fill="#ffffff"/>
+                        <path d="M691.2 441.6L512 179.2c-6.4-6.4-19.2-6.4-25.6 0l-179.2 256c-102.4 147.2-6.4 364.8 172.8 371.2h38.4c179.2-6.4 275.2-217.6 172.8-364.8z" fill="#333"/>
+                        <path d="M608 524.8l-128 160c-6.4 6.4-12.8 0-12.8-6.4l12.8-83.2c0-6.4 0-6.4-6.4-6.4H377.6c-6.4-6.4-6.4-12.8 0-12.8L512 409.6c6.4-6.4 12.8 0 12.8 6.4l-25.6 89.6c0 6.4 6.4 6.4 12.8 6.4h96c6.4 0 6.4 6.4 0 12.8z" fill="#FFFFFF"/>
+                    </g>
+                </svg>
+            </div>
+        </div>
+        
+        <p class="subtitle">Welcome! These icons represent communication, navigation, and energy.</p>
+    </div>
+</body>
+</html>
